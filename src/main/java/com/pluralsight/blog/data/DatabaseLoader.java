@@ -52,4 +52,6 @@ public class DatabaseLoader implements ApplicationRunner {
         postRepository.saveAll(randomPosts);
         authorRepository.saveAll(authors);
     }
+
+
 }
