@@ -7,7 +7,11 @@ import org.springframework.stereotype.Component;
 
 import org.springframework.data.rest.core.annotation.RestResource;
 
+import java.util.List;
+
 
 public interface PostRepository extends JpaRepository<Post, Long>{
+
+    public List<Post> findByTitleContaining(String title);
 
 }
